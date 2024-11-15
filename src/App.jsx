@@ -767,6 +767,7 @@ function App() {
 					maxWidth: containersMaxWidth,
 					width: containersMaxWidth,
 					padding: "80px 0px",
+          borderTop: "2px solid #ffffff05",
 				}}
 			>
         <Row style={{width: '100%'}} gutter={[0, 80]}>
