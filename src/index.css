@@ -1,0 +1,15 @@
+:root {
+  --color-purple: #682CA6;
+  --color-ocean-green: #6CCF9B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #12132A;
+}
