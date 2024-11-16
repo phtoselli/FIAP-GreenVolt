@@ -10,6 +10,7 @@ import {
   List,
   Row,
   Space,
+  Anchor,
 } from "antd";
 
 import Meta from "antd/es/card/Meta";
@@ -64,15 +65,60 @@ function App() {
         }}
       >
         <Image preview="none" src={logo} width={150} />
-        <Flex gap={16}>
-          <Link href="#home">Início</Link>
+        <Anchor
+          direction="horizontal"
+          items={[
+            {
+              key: "home",
+              href: "#home",
+              title: <span className="light-gray-link">Início</span>,
+            },
+            {
+              key: "problem",
+              href: "#problem",
+              title: <span className="light-gray-link">Problema</span>,
+            },
+            {
+              key: "gamification",
+              href: "#gamification",
+              title: <span className="light-gray-link">Gamificação</span>,
+            },
+            {
+              key: "share",
+              href: "#share",
+              title: <span className="light-gray-link">Compartilhamento</span>,
+            },
+            {
+              key: "advantages",
+              href: "#advantages",
+              title: <span className="light-gray-link">Vantagens</span>,
+            },
+            {
+              key: "testimonial",
+              href: "#testimonial",
+              title: <span className="light-gray-link">Testemunhos</span>,
+            },
+            {
+              key: "about",
+              href: "#about",
+              title: <span className="light-gray-link">Sobre</span>,
+            },
+            {
+              key: "contact",
+              href: "#contact",
+              title: <span className="light-gray-link">Contrato</span>,
+            },
+          ]}
+        />
+        {/* <Link href="#home">
+            Início: Problema
+          </Link>
           <Link href="#gamification">Gamificação</Link>
           <Link href="#share">Compartilhamento</Link>
           <Link href="#advantages">Vantagens</Link>
           <Link href="#testimonial">Testemunhos</Link>
           <Link href="#about">Sobre</Link>
-          <Link href="#contact">Contato</Link>
-        </Flex>
+          <Link href="#contact">Contato</Link> */}
       </Flex>
 
       {/* ------------------ HERO  ------------------------- */}
@@ -86,7 +132,7 @@ function App() {
         }}
       >
         <Row>
-          <Col span={12}>
+          <Col span={12} id="home">
             <Flex
               align="flex-start"
               justify="center"
@@ -108,7 +154,7 @@ function App() {
           </Col>
           <Col span={12}>
             <Flex align="center" justify="center">
-              <Image preview="false" src={hero} width={220} />
+              <Image preview="false" src={hero} width={300} />
             </Flex>
           </Col>
         </Row>
@@ -124,28 +170,29 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
-          <Col span={24}>
-            <Flex
-              vertical="vertical"
-              align="flex-start"
-              justify="center"
-              style={{ padding: "40px 0px" }}
-            >
+        <Row id="problem">
+          <Col span={24} id="#home">
+            <Flex vertical="vertical" align="flex-start" justify="center">
               <Title
-                level={2}
+                level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
               >
                 Problema
               </Title>
-              <Paragraph style={{ color: `${textColor}90` }}>
-                Por que a <Image preview="false" src={name} width={80} /> é
-                essencial?
-              </Paragraph>
+              <Title level={2} style={{ color: textColor }}>
+                Por que a{" "}
+                <Image
+                  preview="false"
+                  src={name}
+                  width={120}
+                  alt="Imagem com o logo do Green Volt, com a palavra Green Volt escrita"
+                />{" "}
+                é essencial?
+              </Title>
             </Flex>
           </Col>
           <Col span={12}>
-            <Image preview="false" src={problem} width={250} />
+            <Image preview="false" src={problem} width={300} />
           </Col>
           <Col span={12}>
             <Flex align="center" justify="center" style={{ padding: "24px" }}>
@@ -216,8 +263,8 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
-          <Col span={24}>
+        <Row id="gamification">
+          <Col span={24} id="#gamification">
             <Flex
               vertical="vertical"
               align="flex-start"
@@ -225,14 +272,15 @@ function App() {
               style={{ padding: "40px 0px" }}
             >
               <Title
-                level={2}
+                level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
+                id="#gamification"
               >
                 Gameficação
               </Title>
-              <Paragraph style={{ color: textColor }}>
+              <Title level={2} style={{ color: textColor }}>
                 Economize Energia de Forma Divertida e Interativa
-              </Paragraph>
+              </Title>
             </Flex>
           </Col>
           <Col span={12}>
@@ -248,7 +296,7 @@ function App() {
             </Flex>
           </Col>
           <Col span={12}>
-            <Image preview="false" src={gamification} width={250} />
+            <Image preview="false" src={gamification} width={300} />
           </Col>
           <Col span={24}>
             <Row>
@@ -304,7 +352,7 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
+        <Row id="share">
           <Col span={24}>
             <Flex
               vertical="vertical"
@@ -313,18 +361,18 @@ function App() {
               style={{ padding: "40px 0px" }}
             >
               <Title
-                level={2}
+                level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
               >
                 Compartilhamento
               </Title>
-              <Paragraph style={{ color: textColor }}>
+              <Title level={2} style={{ color: textColor }}>
                 Acompanhe a Energia que Você Gera e Compartilhe com a Rede
-              </Paragraph>
+              </Title>
             </Flex>
           </Col>
           <Col span={12}>
-            <Image preview="false" src={share} width={250} />
+            <Image preview="false" src={share} width={300} />
           </Col>
           <Col span={12}>
             <Flex
@@ -397,8 +445,8 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
-          <Col span={24}>
+        <Row id="advantages">
+          <Col span={24} id="#advantages">
             <Flex
               vertical="vertical"
               align="flex-start"
@@ -406,14 +454,14 @@ function App() {
               style={{ padding: "40px 0px" }}
             >
               <Title
-                level={2}
+                level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
               >
                 Vantagens
               </Title>
-              <Paragraph style={{ color: textColor }}>
-                Faremos a diferença na sua vida!
-              </Paragraph>
+              <Title level={2} style={{ color: textColor }}>
+                Por que faremos a diferença na sua vida?
+              </Title>
             </Flex>
           </Col>
           <Col span={24}>
@@ -574,15 +622,18 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
+        <Row id="testimonial">
           <Col span={24}>
-            <Title style={{ textAlign: "center", color: titleColor }}>
+            <Title level={1} style={{ textAlign: "center", color: textColor }}>
               <Image preview="false" src={quote1} width={30} /> Testemunhos dos
               clientes <Image preview="false" src={quote2} width={30} />
             </Title>
-            <Paragraph style={{ textAlign: "center", color: `${textColor}90` }}>
+            <Title
+              level={2}
+              style={{ textAlign: "center", color: `${textColor}90` }}
+            >
               O que Nossos Usuários Dizem?
-            </Paragraph>
+            </Title>
           </Col>
           <Col span={24}>
             <Row gutter={24}>
@@ -681,7 +732,7 @@ function App() {
           padding: "80px 0px",
         }}
       >
-        <Row>
+        <Row id="about">
           <Col span={24}>
             <Flex
               vertical="vertical"
@@ -690,16 +741,18 @@ function App() {
               style={{ padding: "40px 0px" }}
             >
               <Title
-                level={2}
+                level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
               >
                 Sobre nós
               </Title>
-              <Paragraph style={{ color: textColor }}>Quem somos?</Paragraph>
+              <Title level={2} style={{ color: textColor }}>
+                Quem somos?
+              </Title>
             </Flex>
           </Col>
           <Col span={12}>
-            <Flex align="center" justify="center" style={{ padding: "24px" }}>
+            <Flex align="center" justify="center">
               <Paragraph style={{ color: `${textColor}90` }}>
                 Queremos ser o app de energia sustentável mais usado no Brasil,
                 ajudando a criar um futuro mais verde para todos. O GreenVolt
@@ -714,7 +767,7 @@ function App() {
             </Flex>
           </Col>
           <Col span={12}>
-            <Image preview="false" src={about} width={250} />
+            <Image preview="false" src={about} width={350} />
           </Col>
           <Divider style={{ borderColor: "#ffffff20" }} />
           {/* ----------------- ONDE ATUAMOS -------------- */}
@@ -725,7 +778,7 @@ function App() {
               justify="center"
               style={{ padding: "40px 0px" }}
             >
-              <Title level={2} style={{ color: textColor }}>
+              <Title level={1} style={{ color: textColor }}>
                 Onde atuamos?
               </Title>
               <Paragraph style={{ color: textColor }}>
@@ -831,7 +884,7 @@ function App() {
               </Space>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={12} id="contact">
             <Flex vertical="vertical">
               <Title level={2} style={{ color: titleColor }}>
                 Contato

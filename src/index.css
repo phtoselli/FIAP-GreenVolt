@@ -13,3 +13,19 @@
 body {
   background-color: #12132a;
 }
+
+.ant-anchor-link-title {
+  color: #fdfdff;
+}
+
+.ant-anchor-link-active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.light-gray-link {
+  color: #767799;
+}
+.light-gray-link:hover {
+  color: white;
+}
