@@ -1,6 +1,6 @@
 :root {
-  --color-purple: #682CA6;
-  --color-ocean-green: #6CCF9B;
+  --color-purple: #682ca6;
+  --color-ocean-green: #6ccf9b;
 }
 
 * {
@@ -11,5 +11,5 @@
 }
 
 body {
-  background-color: #12132A;
+  background-color: #12132a;
 }
