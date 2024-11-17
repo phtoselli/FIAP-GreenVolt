@@ -1,10 +1,10 @@
 # Integrantes
 
-Isabelle Moura Alcantara RM 558776
-Henrique Costa Pereira RM 557938
-Evelyn Karoline Gusson Alcântara RM 558733
-Isaac Nogueira Veras Damasceno RM 557764
-Pedro Toselli RM 99076
+- Isabelle Moura Alcantara RM 558776
+- Henrique Costa Pereira RM 557938
+- Evelyn Karoline Gusson Alcântara RM 558733
+- Isaac Nogueira Veras Damasceno RM 557764
+- Pedro Toselli RM 99076
 
 # Green Volt
 
