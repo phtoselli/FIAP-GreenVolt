@@ -112,7 +112,7 @@ function App() {
             {
               key: "contact",
               href: "#contact",
-              title: <span className="light-gray-link">Contrato</span>,
+              title: <span className="light-gray-link">Contato</span>,
             },
           ]}
         />
@@ -142,9 +142,9 @@ function App() {
                 preview="false"
                 src={name}
                 width={300}
-                style={{ marginBottom: "40px" }}
+                style={{ marginBottom: "20px" }}
               />
-              <Title level={2} style={{ color: textColor }}>
+              <Title level={1} style={{ color: textColor, marginTop: "0" }}>
                 Economia de Energia e Sustentabilidade ao Seu Alcance
               </Title>
               <Paragraph
@@ -182,17 +182,22 @@ function App() {
             <Flex vertical="vertical" align="flex-start" justify="center">
               <Title
                 level={1}
-                style={{ color: titleColor, textTransform: "uppercase" }}
+                style={{
+                  color: titleColor,
+                  textTransform: "uppercase",
+                  marginBottom: "0",
+                }}
               >
                 Problema
               </Title>
-              <Title level={2} style={{ color: textColor }}>
+              <Title level={1} style={{ color: textColor, marginTop: "0" }}>
                 Por que a{" "}
                 <Image
                   preview="false"
                   src={name}
-                  width={120}
+                  width={160}
                   alt="Imagem com o logo do Green Volt, com a palavra Green Volt escrita"
+                  style={{ marginTot: "0" }}
                 />{" "}
                 é essencial?
               </Title>
@@ -293,12 +298,16 @@ function App() {
             <Flex vertical="vertical" align="flex-start" justify="center">
               <Title
                 level={1}
-                style={{ color: titleColor, textTransform: "uppercase" }}
+                style={{
+                  color: titleColor,
+                  textTransform: "uppercase",
+                  marginBottom: "0",
+                }}
                 id="#gamification"
               >
                 Gameficação
               </Title>
-              <Title level={2} style={{ color: textColor }}>
+              <Title level={1} style={{ color: textColor, marginTop: "0" }}>
                 Economize Energia de Forma Divertida e Interativa
               </Title>
             </Flex>
@@ -400,11 +409,18 @@ function App() {
             >
               <Title
                 level={1}
-                style={{ color: titleColor, textTransform: "uppercase" }}
+                style={{
+                  color: titleColor,
+                  textTransform: "uppercase",
+                  marginBottom: "0",
+                }}
               >
                 Compartilhamento
               </Title>
-              <Title level={2} style={{ color: textColor }}>
+              <Title
+                level={1}
+                style={{ color: textColor, marginTop: "0", marginBottom: "0" }}
+              >
                 Acompanhe a Energia que Você Gera e Compartilhe com a Rede
               </Title>
             </Flex>
@@ -513,11 +529,15 @@ function App() {
             >
               <Title
                 level={1}
-                style={{ color: titleColor, textTransform: "uppercase" }}
+                style={{
+                  color: titleColor,
+                  textTransform: "uppercase",
+                  marginBottom: "0",
+                }}
               >
                 Vantagens
               </Title>
-              <Title level={2} style={{ color: textColor }}>
+              <Title level={1} style={{ color: textColor, marginTop: "0" }}>
                 Por que faremos a diferença na sua vida?
               </Title>
             </Flex>
@@ -722,7 +742,7 @@ function App() {
               clientes <Image preview="false" src={quote2} width={30} />
             </Title>
             <Title
-              level={2}
+              level={1}
               style={{ textAlign: "center", color: `${textColor}90` }}
             >
               O que Nossos Usuários Dizem?
@@ -834,6 +854,7 @@ function App() {
       </Flex>
 
       {/* ------------------ SOBRE NÓS ------------------------- */}
+
       <Flex
         align="center"
         justify="center"
@@ -853,11 +874,22 @@ function App() {
             >
               <Title
                 level={1}
-                style={{ color: titleColor, textTransform: "uppercase" }}
+                style={{
+                  color: titleColor,
+                  textTransform: "uppercase",
+                  marginBottom: "0",
+                }}
               >
                 Sobre nós
               </Title>
-              <Title level={2} style={{ color: textColor }}>
+              <Title
+                level={1}
+                style={{
+                  color: textColor,
+                  marginTop: "0",
+                  marginBottom: "0",
+                }}
+              >
                 Quem somos?
               </Title>
             </Flex>
@@ -868,20 +900,36 @@ function App() {
                 className="large-paragraph"
                 style={{ color: `${textColor}90` }}
               >
-                <Text className="large-paragraph" style={{ color: textColor }}>
-                  {aboutData?.descricao}
-                </Text>{" "}
-                {/* <br />O GreenVolt nasceu do sonho de{" "}
-                <Text className="large-paragraph" style={{ color: titleColor }}>
-                  {" "}
-                  5 estudantes da FIAP{" "}
-                </Text>
-                {aboutData?.descricao} */}
+                {aboutData?.descricao.map((item, index) => {
+                  if (item.estilo === "destaque") {
+                    return (
+                      <Text
+                        key={index}
+                        className="large-paragraph"
+                        style={{ color: textColor }}
+                      >
+                        <strong>{item.texto}</strong>
+                        <br />
+                      </Text>
+                    );
+                  }
+                  if (item.estilo === "normal") {
+                    return (
+                      <Text
+                        key={index}
+                        className="large-paragraph"
+                        style={{ color: `${textColor}90` }}
+                      >
+                        {item.texto}
+                      </Text>
+                    );
+                  }
+                })}
               </Paragraph>
             </Flex>
           </Col>
           <Col span={8}>
-            <Image preview="false" src={about} width={300} />
+            <Image preview="false" src={about} width={400} />
           </Col>
           <Divider style={{ borderColor: "#ffffff20" }} />
           {/* ----------------- ONDE ATUAMOS -------------- */}
@@ -897,11 +945,14 @@ function App() {
               </Title>
               <Paragraph
                 className="large-paragraph"
-                style={{ color: textColor }}
+                style={{ color: `${textColor}90` }}
               >
-                Nosso principal escritório sede está localizado na Av. Paulista,
-                1.000, São Paulo/SP, mas atendemos clientes em diversas regiões
-                para levar energia sustentável a cada vez mais brasileiros.
+                Nosso principal escritório sede está localizado na{" "}
+                <Text className="large-paragraph" style={{ color: textColor }}>
+                  Av. Paulista, 1.000
+                </Text>
+                , São Paulo/SP, mas atendemos clientes em diversas regiões para
+                levar energia sustentável a cada vez mais brasileiros.
               </Paragraph>
             </Flex>
           </Col>
@@ -944,10 +995,20 @@ function App() {
                     }}
                     dataSource={offices}
                     renderItem={(office) => (
-                      <Paragraph style={{ color: textColor }} key={office?.id}>
+                      <Paragraph
+                        style={{ color: textColor, marginRight: "10px" }}
+                        key={office?.id}
+                      >
                         {office?.localizacao}
                         <br />
-                        {office?.endereco}
+                        <Text
+                          style={{
+                            color: `${textColor}90`,
+                          }}
+                        >
+                          {" "}
+                          {office?.endereco}
+                        </Text>
                       </Paragraph>
                     )}
                   />
