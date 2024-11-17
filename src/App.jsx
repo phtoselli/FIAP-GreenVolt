@@ -143,6 +143,7 @@ function App() {
                 src={name}
                 width={300}
                 style={{ marginBottom: "20px" }}
+                alt="Logo da Green Volt com a palavra Green Volt escrita em verde e roxo"
               />
               <Title level={1} style={{ color: textColor, marginTop: "0" }}>
                 Economia de Energia e Sustentabilidade ao Seu Alcance
@@ -161,7 +162,12 @@ function App() {
           </Col>
           <Col span={8}>
             <Flex align="center" justify="center">
-              <Image preview="false" src={hero} width={300} />
+              <Image
+                preview="false"
+                src={hero}
+                width={300}
+                alt="Ilustração de um celular com uma nota de pagamento saindo da tela e um botão escrito 'calculate' / 'calcular'"
+              />
             </Flex>
           </Col>
         </Row>
@@ -234,6 +240,7 @@ function App() {
                     src={icon1}
                     width={25}
                     className="padding-icon"
+                    alt="Ilustração de Menina sentada com notebook no colo, com placa solar, sol e turbinas eólicas ao fundo"
                   />
                   <Paragraph style={{ color: textColor }}>
                     Falta de controle sobre o consumo doméstico:
@@ -328,7 +335,12 @@ function App() {
             </Flex>
           </Col>
           <Col span={8}>
-            <Image preview="false" src={gamification} width={300} />
+            <Image
+              preview="false"
+              src={gamification}
+              width={300}
+              alt="Ilustração de um celular com uma trilha de jogo na tela, bandeirinhas de chegada e medalha. Tudo na cor azul"
+            />
           </Col>
           <Col span={24}>
             <Row>
@@ -426,7 +438,12 @@ function App() {
             </Flex>
           </Col>
           <Col span={10}>
-            <Image preview="false" src={share} width={300} />
+            <Image
+              preview="false"
+              src={share}
+              width={300}
+              alt="Ilustração de menina em frente a placas solares e turbinas eólicas ao fundo"
+            />
           </Col>
           <Col span={14}>
             <Flex
@@ -742,7 +759,7 @@ function App() {
               clientes <Image preview="false" src={quote2} width={30} />
             </Title>
             <Title
-              level={1}
+              level={3}
               style={{ textAlign: "center", color: `${textColor}90` }}
             >
               O que Nossos Usuários Dizem?
@@ -759,7 +776,12 @@ function App() {
                     background: "none",
                     border: "none",
                   }}
-                  cover={<img alt="example" src={person1} />}
+                  cover={
+                    <img
+                      alt="Homem de cabelos grisalhos sorrindo de forma amigável"
+                      src={person1}
+                    />
+                  }
                 >
                   <Meta
                     title={
@@ -791,7 +813,12 @@ function App() {
                     background: "none",
                     border: "none",
                   }}
-                  cover={<img alt="example" src={person2} />}
+                  cover={
+                    <img
+                      alt="Imagem de uma mulher com cabelo preto e expressão serena"
+                      src={person2}
+                    />
+                  }
                 >
                   <Meta
                     title={
@@ -824,7 +851,12 @@ function App() {
                     background: "none",
                     border: "none",
                   }}
-                  cover={<img alt="example" src={person3} />}
+                  cover={
+                    <img
+                      alt="Imagem de uma mulher com cabelos ruivos e expressão neutra"
+                      src={person3}
+                    />
+                  }
                 >
                   <Meta
                     title={
@@ -929,9 +961,15 @@ function App() {
             </Flex>
           </Col>
           <Col span={8}>
-            <Image preview="false" src={about} width={400} />
+            <Image
+              preview="false"
+              src={about}
+              width={400}
+              alt="Ilustração de uma tomada ligando turbinas de energia eólica e o sol ao centro"
+            />
           </Col>
           <Divider style={{ borderColor: "#ffffff20" }} />
+
           {/* ----------------- ONDE ATUAMOS -------------- */}
           <Col span={24}>
             <Flex
@@ -957,7 +995,12 @@ function App() {
             </Flex>
           </Col>
           <Col span={8}>
-            <Image preview="false" src={brasil} width={250} />
+            <Image
+              preview="false"
+              src={brasil}
+              width={250}
+              alt="Ilustração do mapa do Brasil em pontos brancos"
+            />
           </Col>
           <Col span={16}>
             <Flex
@@ -1053,22 +1096,37 @@ function App() {
               </Space>
             </Flex>
           </Col>
-          <Col span={12} id="contact">
+          <Col span={24} id="contact">
             <Flex vertical="vertical">
-              <Title level={2} style={{ color: titleColor }}>
+              <Title level={1} style={{ color: titleColor }}>
                 Contato
               </Title>
-              <Paragraph style={{ color: `${textColor}90` }}>
-                <Text style={{ color: textColor }}>Escritório Central:</Text>{" "}
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
+                <Text className="large-paragraph" style={{ color: textColor }}>
+                  Escritório Central:
+                </Text>{" "}
                 Av. Paulista, 1000, São Paulo, SP
               </Paragraph>
-              <Paragraph style={{ color: `${textColor}90` }}>
-                <Text style={{ color: textColor }}>Email:</Text>{" "}
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
+                <Text className="large-paragraph" style={{ color: textColor }}>
+                  Email:
+                </Text>{" "}
                 contato@greenvolt.com.br
               </Paragraph>
-              <Paragraph style={{ color: `${textColor}90` }}>
-                <Text style={{ color: textColor }}>Telefone:</Text> +55 (11)
-                23456-7688
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
+                <Text className="large-paragraph" style={{ color: textColor }}>
+                  Telefone:
+                </Text>{" "}
+                +55 (11) 23456-7688
               </Paragraph>
             </Flex>
           </Col>
