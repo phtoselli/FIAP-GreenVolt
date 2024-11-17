@@ -139,7 +139,12 @@ function App() {
               vertical="vertical"
               style={{ padding: "16px" }}
             >
-              <Image preview="false" src={name} width={250} />
+              <Image
+                preview="false"
+                src={name}
+                width={300}
+                style={{ marginBottom: "40px" }}
+              />
               <Title level={2} style={{ color: textColor }}>
                 Economia de Energia e Sustentabilidade ao Seu Alcance
               </Title>
@@ -150,7 +155,7 @@ function App() {
                 Conecte, economize e compartilhe energia de forma inteligente
                 com o nosso aplicativo.
               </Paragraph>
-              <Button type="primary" size="large">
+              <Button className="button-padding" type="primary" size="large">
                 Baixe o App
               </Button>
             </Flex>
@@ -194,10 +199,10 @@ function App() {
               </Title>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={10}>
             <Image preview="false" src={problem} width={300} />
           </Col>
-          <Col span={12}>
+          <Col span={14}>
             <Flex align="center" justify="center" style={{ padding: "24px" }}>
               <Paragraph
                 className="large-paragraph"
@@ -220,7 +225,12 @@ function App() {
             <Row>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon1} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon1}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Falta de controle sobre o consumo doméstico:
                   </Paragraph>
@@ -232,7 +242,12 @@ function App() {
               </Col>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon2} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon2}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Conscientização em relação ao desperdício de energia
                   </Paragraph>
@@ -244,7 +259,12 @@ function App() {
               </Col>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon3} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon3}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Dificuldade em acompanhar a geração própria de energia
                   </Paragraph>
@@ -271,12 +291,7 @@ function App() {
       >
         <Row id="gamification">
           <Col span={24} id="#gamification">
-            <Flex
-              vertical="vertical"
-              align="flex-start"
-              justify="center"
-              style={{ padding: "40px 0px" }}
-            >
+            <Flex vertical="vertical" align="flex-start" justify="center">
               <Title
                 level={1}
                 style={{ color: titleColor, textTransform: "uppercase" }}
@@ -290,7 +305,7 @@ function App() {
             </Flex>
           </Col>
           <Col span={16}>
-            <Flex align="center" justify="center" style={{ padding: "24px" }}>
+            <Flex align="center" justify="center">
               <Paragraph
                 className="large-paragraph"
                 style={{ color: `${textColor}90` }}
@@ -309,9 +324,14 @@ function App() {
           </Col>
           <Col span={24}>
             <Row>
-              <Col span={8} style={{ padding: "24px" }}>
+              <Col span={8} style={{ paddingRight: "20px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon1} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon1}
+                    width={25}
+                    style={{ paddingBottom: "10px" }}
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Análise em Tempo Real:
                   </Paragraph>
@@ -321,9 +341,14 @@ function App() {
                   </Paragraph>
                 </Flex>
               </Col>
-              <Col span={8} style={{ padding: "24px" }}>
+              <Col span={8} style={{ paddingRight: "20px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon2} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon2}
+                    width={25}
+                    style={{ paddingBottom: "10px" }}
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Benchmarking Global
                   </Paragraph>
@@ -333,9 +358,14 @@ function App() {
                   </Paragraph>
                 </Flex>
               </Col>
-              <Col span={8} style={{ padding: "24px" }}>
+              <Col span={8} style={{ paddingRight: "20px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon3} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon3}
+                    width={25}
+                    style={{ paddingBottom: "10px" }}
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Pontuação e Conquistas:
                   </Paragraph>
@@ -401,14 +431,21 @@ function App() {
                 contribua com a comunidade e visualize os benefícios de sua
                 geração em relação ao consumo doméstico.
               </Paragraph>
-              <Button type="primary">Baixe o App</Button>
+              <Button className="button-padding" type="primary">
+                Baixe o App
+              </Button>
             </Flex>
           </Col>
           <Col span={24}>
             <Row>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon1} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon1}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Monitoramento de Geração Solar
                   </Paragraph>
@@ -420,7 +457,12 @@ function App() {
               </Col>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon2} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon2}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Controle de Ganhos e Consumo:
                   </Paragraph>
@@ -432,7 +474,12 @@ function App() {
               </Col>
               <Col span={8} style={{ padding: "24px" }}>
                 <Flex vertical="vertical" align="flex-start" justify="center">
-                  <Image preview="false" src={icon3} width={25} />
+                  <Image
+                    preview="false"
+                    src={icon3}
+                    width={25}
+                    className="padding-icon"
+                  />
                   <Paragraph style={{ color: textColor }}>
                     Incentivo ao Compartilhamento de Energia:
                   </Paragraph>
@@ -644,7 +691,12 @@ function App() {
               </Col>
               <Col span={24}>
                 <Flex align="center" justify="center">
-                  <Button type="primary" size="large">
+                  <Button
+                    className="button-padding"
+                    type="primary"
+                    size="large"
+                    style={{ marginTop: "20px" }}
+                  >
                     Baixe o App
                   </Button>
                 </Flex>
@@ -945,13 +997,19 @@ function App() {
               <Image preview="false" src={logo} width={200} />
               <Space>
                 <Link>
-                  <TwitterOutlined />
+                  <TwitterOutlined
+                    style={{ fontSize: "26px", color: textColor }}
+                  />
                 </Link>
                 <Link>
-                  <LinkedinFilled />
+                  <LinkedinFilled
+                    style={{ fontSize: "26px", color: textColor }}
+                  />
                 </Link>
                 <Link>
-                  <FacebookFilled />
+                  <FacebookFilled
+                    style={{ fontSize: "26px", color: textColor }}
+                  />
                 </Link>
               </Space>
             </Flex>
