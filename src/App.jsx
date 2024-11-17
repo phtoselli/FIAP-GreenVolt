@@ -46,11 +46,15 @@ import {
 import person1 from "./assets/person1.png";
 import person2 from "./assets/person2.png";
 import person3 from "./assets/person3.png";
+import { GetOffices } from "./services/requests/getoffices";
+import { GetAbout } from "./services/requests/getAbout";
 
 function App() {
   const containersMaxWidth = 800;
   const textColor = "#ffffff";
   const titleColor = "#6CCF9B";
+  const { offices } = GetOffices();
+  const { aboutData } = GetAbout();
 
   return (
     <Flex vertical="vertical" align="center" justify="center">
@@ -58,6 +62,7 @@ function App() {
       <Flex
         align="center"
         justify="space-between"
+        className="navbar"
         style={{
           padding: "16px",
           width: "100%",
@@ -67,6 +72,7 @@ function App() {
         <Image preview="none" src={logo} width={150} />
         <Anchor
           direction="horizontal"
+          affix
           items={[
             {
               key: "home",
@@ -110,21 +116,14 @@ function App() {
             },
           ]}
         />
-        {/* <Link href="#home">
-            Início: Problema
-          </Link>
-          <Link href="#gamification">Gamificação</Link>
-          <Link href="#share">Compartilhamento</Link>
-          <Link href="#advantages">Vantagens</Link>
-          <Link href="#testimonial">Testemunhos</Link>
-          <Link href="#about">Sobre</Link>
-          <Link href="#contact">Contato</Link> */}
       </Flex>
 
       {/* ------------------ HERO  ------------------------- */}
       <Flex
         align="center"
         justify="center"
+        className="home"
+        id="home"
         style={{
           maxWidth: containersMaxWidth,
           width: containersMaxWidth,
@@ -132,7 +131,7 @@ function App() {
         }}
       >
         <Row>
-          <Col span={16} id="home">
+          <Col span={16}>
             <Flex
               align="flex-start"
               justify="center"
@@ -870,20 +869,14 @@ function App() {
                 style={{ color: `${textColor}90` }}
               >
                 <Text className="large-paragraph" style={{ color: textColor }}>
-                  Queremos ser o app de energia sustentável mais usado no
-                  Brasil, ajudando a criar um futuro mais verde para todos.
+                  {aboutData?.descricao}
                 </Text>{" "}
-                <br />O GreenVolt nasceu do sonho de{" "}
+                {/* <br />O GreenVolt nasceu do sonho de{" "}
                 <Text className="large-paragraph" style={{ color: titleColor }}>
                   {" "}
                   5 estudantes da FIAP{" "}
                 </Text>
-                , que se uniram para transformar o consumo energético e promover
-                a sustentabilidade. Em 2024, lançaram o primeiro protótipo e,
-                desde então, o projeto cresceu e impactou milhares de
-                residências no Brasil. Nossa missão é clara: empoderar as
-                pessoas para consumir energia de forma consciente e sustentável,
-                enquanto aproveitam o melhor da tecnologia.
+                {aboutData?.descricao} */}
               </Paragraph>
             </Flex>
           </Col>
@@ -944,33 +937,18 @@ function App() {
                 }}
               />
               <Row style={{ width: "100%" }}>
-                <Col span={12}>
+                <Col>
                   <List
-                    dataSource={[
-                      "São Paulo, SP",
-                      "Rio de Janeiro, RJ",
-                      "Belo Horizonte, MG",
-                      "Porto Alegre, RS",
-                      "Curitiba, PR",
-                      "Salvador, BA",
-                    ]}
-                    renderItem={(item) => (
-                      <Paragraph style={{ color: textColor }}>{item}</Paragraph>
-                    )}
-                  />
-                </Col>
-                <Col span={12}>
-                  <List
-                    dataSource={[
-                      "Brasília, DF",
-                      "Fortaleza, CE",
-                      "Recife, PE",
-                      "Manaus, AM",
-                      "Uberlândia, MG",
-                      "Florianópolis, SC",
-                    ]}
-                    renderItem={(item) => (
-                      <Paragraph style={{ color: textColor }}>{item}</Paragraph>
+                    grid={{
+                      column: 2,
+                    }}
+                    dataSource={offices}
+                    renderItem={(office) => (
+                      <Paragraph style={{ color: textColor }} key={office?.id}>
+                        {office?.localizacao}
+                        <br />
+                        {office?.endereco}
+                      </Paragraph>
                     )}
                   />
                 </Col>

@@ -15,7 +15,7 @@ body {
 }
 
 .ant-anchor-link-title {
-  color: #fdfdff;
+  color: #ffffff;
 }
 
 .ant-anchor-link-active {
@@ -24,11 +24,9 @@ body {
 }
 
 .light-gray-link {
-  color: #767799;
+  color: #ffffff;
 }
-.light-gray-link:hover {
-  color: white;
-}
+
 .large-paragraph {
   font-size: 20px;
 }
@@ -44,4 +42,16 @@ body {
 
 .padding-icon {
   padding-bottom: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #12132a;
+}
+
+.home {
+  margin-top: 10%;
 }
