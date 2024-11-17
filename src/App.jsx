@@ -132,7 +132,7 @@ function App() {
         }}
       >
         <Row>
-          <Col span={12} id="home">
+          <Col span={16} id="home">
             <Flex
               align="flex-start"
               justify="center"
@@ -143,7 +143,10 @@ function App() {
               <Title level={2} style={{ color: textColor }}>
                 Economia de Energia e Sustentabilidade ao Seu Alcance
               </Title>
-              <Paragraph style={{ color: textColor, opacity: "0.5" }}>
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: textColor, opacity: "0.5" }}
+              >
                 Conecte, economize e compartilhe energia de forma inteligente
                 com o nosso aplicativo.
               </Paragraph>
@@ -152,7 +155,7 @@ function App() {
               </Button>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={8}>
             <Flex align="center" justify="center">
               <Image preview="false" src={hero} width={300} />
             </Flex>
@@ -196,7 +199,10 @@ function App() {
           </Col>
           <Col span={12}>
             <Flex align="center" justify="center" style={{ padding: "24px" }}>
-              <Paragraph style={{ color: `${textColor}90` }}>
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
                 Vivemos em um mundo onde os{" "}
                 <Text style={{ color: textColor, fontWeight: "bold" }}>
                   recursos naturais
@@ -283,9 +289,12 @@ function App() {
               </Title>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={16}>
             <Flex align="center" justify="center" style={{ padding: "24px" }}>
-              <Paragraph style={{ color: `${textColor}90` }}>
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
                 O GreenVolt utiliza gamificação para ajudar você a economizar
                 energia, ao mesmo tempo em que promove a conscientização sobre o
                 consumo sustentável. Através de dispositivos IoT e Inteligência
@@ -295,7 +304,7 @@ function App() {
               </Paragraph>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={8}>
             <Image preview="false" src={gamification} width={300} />
           </Col>
           <Col span={24}>
@@ -371,17 +380,20 @@ function App() {
               </Title>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={10}>
             <Image preview="false" src={share} width={300} />
           </Col>
-          <Col span={12}>
+          <Col span={14}>
             <Flex
               vertical="vertical"
               align="flex-start"
               justify="center"
               style={{ padding: "24px" }}
             >
-              <Paragraph style={{ color: `${textColor}90` }}>
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
                 Para quem já investiu em placas solares, o GreenVolt oferece um
                 monitoramento completo da geração de energia e do impacto
                 financeiro dessa produção. Além disso, incentivamos o
@@ -478,11 +490,17 @@ function App() {
                     borderRadius: "8px",
                   }}
                 >
-                  <Paragraph style={{ width: "100%", color: textColor }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ width: "100%", color: textColor }}
+                  >
                     01
                   </Paragraph>
                   <Image preview="false" src={icon4} width={50} />
-                  <Paragraph style={{ color: textColor, textAlign: "center" }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ color: textColor, textAlign: "center" }}
+                  >
                     Economia Inteligente
                   </Paragraph>
                   <Paragraph
@@ -505,11 +523,17 @@ function App() {
                     borderRadius: "8px",
                   }}
                 >
-                  <Paragraph style={{ width: "100%", color: textColor }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ width: "100%", color: textColor }}
+                  >
                     02
                   </Paragraph>
                   <Image preview="false" src={icon5} width={50} />
-                  <Paragraph style={{ color: textColor, textAlign: "center" }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ color: textColor, textAlign: "center" }}
+                  >
                     Sustentabilidade
                   </Paragraph>
                   <Paragraph
@@ -532,11 +556,17 @@ function App() {
                     borderRadius: "8px",
                   }}
                 >
-                  <Paragraph style={{ width: "100%", color: textColor }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ width: "100%", color: textColor }}
+                  >
                     03
                   </Paragraph>
                   <Image preview="false" src={icon6} width={50} />
-                  <Paragraph style={{ color: textColor, textAlign: "center" }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ color: textColor, textAlign: "center" }}
+                  >
                     Incentivos Financeiros
                   </Paragraph>
                   <Paragraph
@@ -559,11 +589,17 @@ function App() {
                     borderRadius: "8px",
                   }}
                 >
-                  <Paragraph style={{ width: "100%", color: textColor }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ width: "100%", color: textColor }}
+                  >
                     04
                   </Paragraph>
                   <Image preview="false" src={icon5} width={50} />
-                  <Paragraph style={{ color: textColor, textAlign: "center" }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ color: textColor, textAlign: "center" }}
+                  >
                     Integração com IoT e IA
                   </Paragraph>
                   <Paragraph
@@ -585,11 +621,17 @@ function App() {
                     borderRadius: "8px",
                   }}
                 >
-                  <Paragraph style={{ width: "100%", color: textColor }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ width: "100%", color: textColor }}
+                  >
                     05
                   </Paragraph>
                   <Image preview="false" src={icon5} width={50} />
-                  <Paragraph style={{ color: textColor, textAlign: "center" }}>
+                  <Paragraph
+                    className="large-paragraph"
+                    style={{ color: textColor, textAlign: "center" }}
+                  >
                     Simples e Acessível
                   </Paragraph>
                   <Paragraph
@@ -650,12 +692,18 @@ function App() {
                 >
                   <Meta
                     title={
-                      <Paragraph style={{ color: textColor }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: textColor }}
+                      >
                         Carlos, São Paulo
                       </Paragraph>
                     }
                     description={
-                      <Paragraph style={{ color: `${textColor}90` }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: `${textColor}90` }}
+                      >
                         &quot;Com o GreenVolt, consegui reduzir em 20% minha
                         conta de luz e ainda ajudar o meio ambiente.&quot;
                       </Paragraph>
@@ -676,12 +724,18 @@ function App() {
                 >
                   <Meta
                     title={
-                      <Paragraph style={{ color: textColor }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: textColor }}
+                      >
                         Joana, Belo Horizonte
                       </Paragraph>
                     }
                     description={
-                      <Paragraph style={{ color: `${textColor}90` }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: `${textColor}90` }}
+                      >
                         &quot;Agora entendo o consumo de cada aparelho da minha
                         casa, e o app me ajudou a economizar mais do que eu
                         imaginava.&quot;
@@ -703,12 +757,18 @@ function App() {
                 >
                   <Meta
                     title={
-                      <Paragraph style={{ color: textColor }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: textColor }}
+                      >
                         Fernanda, Rio de Janeiro
                       </Paragraph>
                     }
                     description={
-                      <Paragraph style={{ color: `${textColor}90` }}>
+                      <Paragraph
+                        className="large-paragraph"
+                        style={{ color: `${textColor}90` }}
+                      >
                         &quot;É muito satisfatório acompanhar a energia que eu
                         gero e compartilho com a rede. A gamificação torna tudo
                         mais divertido!&quot;
@@ -751,23 +811,32 @@ function App() {
               </Title>
             </Flex>
           </Col>
-          <Col span={12}>
+          <Col span={16}>
             <Flex align="center" justify="center">
-              <Paragraph style={{ color: `${textColor}90` }}>
-                Queremos ser o app de energia sustentável mais usado no Brasil,
-                ajudando a criar um futuro mais verde para todos. O GreenVolt
-                nasceu do sonho de 5 estudantes da FIAP, que se uniram para
-                transformar o consumo energético e promover a sustentabilidade.
-                Em 2024, lançaram o primeiro protótipo e, desde então, o projeto
-                cresceu e impactou milhares de residências no Brasil. Nossa
-                missão é clara: empoderar as pessoas para consumir energia de
-                forma consciente e sustentável, enquanto aproveitam o melhor da
-                tecnologia.
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: `${textColor}90` }}
+              >
+                <Text className="large-paragraph" style={{ color: textColor }}>
+                  Queremos ser o app de energia sustentável mais usado no
+                  Brasil, ajudando a criar um futuro mais verde para todos.
+                </Text>{" "}
+                <br />O GreenVolt nasceu do sonho de{" "}
+                <Text className="large-paragraph" style={{ color: titleColor }}>
+                  {" "}
+                  5 estudantes da FIAP{" "}
+                </Text>
+                , que se uniram para transformar o consumo energético e promover
+                a sustentabilidade. Em 2024, lançaram o primeiro protótipo e,
+                desde então, o projeto cresceu e impactou milhares de
+                residências no Brasil. Nossa missão é clara: empoderar as
+                pessoas para consumir energia de forma consciente e sustentável,
+                enquanto aproveitam o melhor da tecnologia.
               </Paragraph>
             </Flex>
           </Col>
-          <Col span={12}>
-            <Image preview="false" src={about} width={350} />
+          <Col span={8}>
+            <Image preview="false" src={about} width={300} />
           </Col>
           <Divider style={{ borderColor: "#ffffff20" }} />
           {/* ----------------- ONDE ATUAMOS -------------- */}
@@ -781,7 +850,10 @@ function App() {
               <Title level={1} style={{ color: textColor }}>
                 Onde atuamos?
               </Title>
-              <Paragraph style={{ color: textColor }}>
+              <Paragraph
+                className="large-paragraph"
+                style={{ color: textColor }}
+              >
                 Nosso principal escritório sede está localizado na Av. Paulista,
                 1.000, São Paulo/SP, mas atendemos clientes em diversas regiões
                 para levar energia sustentável a cada vez mais brasileiros.

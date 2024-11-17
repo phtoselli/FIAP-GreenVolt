@@ -29,3 +29,6 @@ body {
 .light-gray-link:hover {
   color: white;
 }
+.large-paragraph {
+  font-size: 20px;
+}
