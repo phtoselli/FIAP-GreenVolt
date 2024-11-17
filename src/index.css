@@ -1,6 +1,6 @@
 :root {
-  --color-purple: #682CA6;
-  --color-ocean-green: #6CCF9B;
+  --color-purple: #682ca6;
+  --color-ocean-green: #6ccf9b;
 }
 
 * {
@@ -11,5 +11,82 @@
 }
 
 body {
-  background-color: #12132A;
+  background-color: #12132a;
+}
+
+.ant-anchor-link-title {
+  color: #ffffff;
+}
+
+.ant-anchor-link-active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.light-gray-link {
+  color: #ffffff;
+}
+
+.large-paragraph {
+  font-size: 20px;
+}
+
+#gamification {
+  margin: 0;
+  padding: 0;
+}
+
+.button-padding {
+  padding: 25px;
+}
+
+.padding-icon {
+  padding-bottom: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #12132a;
+}
+
+.home {
+  margin-top: 10%;
+}
+
+.titulo-principal {
+  font-family: "Fonte1";
+  color: green;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.titulo-secundario {
+  font-family: "Fonte2";
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.destaque {
+  font-family: "Fonte3";
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.normal {
+  font-family: "Fonte3";
+  color: gray;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.destaque-verde {
+  font-family: "Fonte3";
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
 }
