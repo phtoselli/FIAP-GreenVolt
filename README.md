@@ -81,3 +81,10 @@ Durante o desenvolvimento, você pode usar os seguintes comandos:
 - Vite: Ferramenta de build de react.
 - Ant Design: Biblioteca de componentes UI que facilita a construção de interfaces.
 - React: Framework JavaScript para construção de interfaces de usuário.
+
+# Instruções para o Backend
+
+## Endpoints Disponíveis
+
+- Para listagem de locais onde atuamos: https://67351e4e5995834c8a91efda.mockapi.io/greenvolt/escritorios;
+- Para descrição sobre a área "Quem somos" do projeto: https://67351e4e5995834c8a91efda.mockapi.io/greenvolt/sobre
