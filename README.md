@@ -82,14 +82,18 @@ Durante o desenvolvimento, você pode usar os seguintes comandos:
 - Ant Design: Biblioteca de componentes UI que facilita a construção de interfaces.
 - React: Framework JavaScript para construção de interfaces de usuário.
 
-# Instruções para o Backend - Endpoints
+# Instruções para o Backend
 
-## Listagem de Escritórios:
+## Endpoints
+
+-Os endpoints abaixo utilizam a plataforma MockAPI.io para simular dados de um backend real.
+
+### Listagem de Escritórios:
 
 - Endpoint: https://67351e4e5995834c8a91efda.mockapi.io/greenvolt/escritorios;
 - Descrição: Retorna uma lista de objetos, cada um representando um escritório da GreenVolt, com informações de localização e endereço;
 
-## Descrição da Área "Quem Somos":
+### Descrição da Área "Quem Somos":
 
 - Endpoint: https://67351e4e5995834c8a91efda.mockapi.io/greenvolt/sobre
 - Descrição: Retorna uma lista de objetos contendo informações detalhadas sobre a empresa GreenVolt;
