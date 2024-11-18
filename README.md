@@ -8,7 +8,7 @@
 
 # Green Volt
 
-Green Volt é uma aplicação web desenvolvida com **Vite** e **Ant Design** para fornecer soluções e informações sobre energias renováveis, com foco em sustentabilidade e otimização de consumo energético.
+A Landing Page do projeto Green Volt é uma aplicação web desenvolvida com **Vite** e **Ant Design** para fornecer soluções e informações sobre energias renováveis, com foco em sustentabilidade e otimização de consumo energético.
 
 # Link do vídeo Pitch explicativo
 
@@ -86,7 +86,7 @@ Durante o desenvolvimento, você pode usar os seguintes comandos:
 
 ## Endpoints
 
--Os endpoints abaixo utilizam a plataforma MockAPI.io para simular dados de um backend real.
+- Os endpoints abaixo utilizam a plataforma MockAPI.io para simular dados de um backend real.
 
 ### Listagem de Escritórios:
 
