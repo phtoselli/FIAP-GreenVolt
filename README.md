@@ -92,4 +92,4 @@ Durante o desenvolvimento, você pode usar os seguintes comandos:
 ## Descrição da Área "Quem Somos":
 
 - Endpoint: https://67351e4e5995834c8a91efda.mockapi.io/greenvolt/sobre
-- Descrição: Retorna um objeto contendo informações detalhadas sobre a empresa GreenVolt;
+- Descrição: Retorna uma lista de objetos contendo informações detalhadas sobre a empresa GreenVolt;
