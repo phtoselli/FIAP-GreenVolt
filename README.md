@@ -12,7 +12,7 @@ A Landing Page do projeto Green Volt é uma aplicação web desenvolvida com **V
 
 # Link do vídeo Pitch explicativo
 
--
+- https://www.youtube.com/watch?v=twG02RXf_TY
 
 # Instruções para o fronted
 
