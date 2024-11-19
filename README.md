@@ -8,7 +8,7 @@
 
 # Green Volt
 
-A Landing Page do projeto Green Volt é uma aplicação web desenvolvida com **Vite** e **Ant Design** para fornecer soluções e informações sobre energias renováveis, com foco em sustentabilidade e otimização de consumo energético.
+A Landing Page do projeto Green Volt é uma aplicação web desenvolvida com **Vite** e **Ant Design** para apresentar nossas soluções e informações sobre energias renováveis, com foco em sustentabilidade e otimização de consumo energético.
 
 # Link do vídeo Pitch explicativo
 
